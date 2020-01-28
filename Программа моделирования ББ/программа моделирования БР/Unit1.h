@@ -1,0 +1,39 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <Classes.hpp>
+#include <Controls.hpp>
+#include <StdCtrls.hpp>
+#include <Forms.hpp>
+#include <Chart.hpp>
+#include <ExtCtrls.hpp>
+#include <Series.hpp>
+#include <TeEngine.hpp>
+#include <TeeProcs.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+        TLabeledEdit *LabeledEditP;
+        TLabeledEdit *LabeledEditCx0;
+        TLabeledEdit *LabeledEditS;
+        TLabeledEdit *LabeledEditCyAlfa;
+                
+        TButton *BRun;
+        TLabeledEdit *LabeledEditr;
+        TLabeledEdit *LabeledEditFi;
+        TLabeledEdit *LabeledEditV;
+        TLabeledEdit *LabeledEditTeta;
+        
+        void __fastcall BRunClick(TObject *Sender);
+        
+private:	// User declarations
+public:		// User declarations
+        __fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif
